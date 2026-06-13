@@ -6,29 +6,33 @@ import ProblemAnalysis from "../pages/ProblemAnalysis";
 import Compare from "../pages/Compare";
 import { createContext } from "react";
 
-export const router = createBrowserRouter([
+export const router = createBrowserRouter(
+  [
+    {
+      path: "/",
+      element: <App />,
+      children: [
+        {
+          index: true,
+          element: <Home />,
+        },
+        {
+          path: "analytics",
+          element: <Analytics />,
+        },
+        {
+          path: "problem_analysis",
+          element: <ProblemAnalysis />,
+        },
+        {
+          path: "compare",
+          element: <Compare />,
+        },
+      ],
+    },
+  ],
   {
     basename: "/cf-lens",
-    path: "/",
-    element: <App />,
-    children: [
-      {
-        index: true,
-        element: <Home />,
-      },
-      {
-        path: "analytics",
-        element: <Analytics />,
-      },
-      {
-        path: "problem_analysis",
-        element: <ProblemAnalysis />,
-      },
-      {
-        path: "compare",
-        element: <Compare />,
-      },
-    ],
-  },
-]);
+  }
+);
 
