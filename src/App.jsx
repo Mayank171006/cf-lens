@@ -1,13 +1,19 @@
-import './App.css'
+import { Outlet } from "react-router-dom";
+import "./App.css";
+import NavBar from "./components/NavBar";
+import "bootstrap/dist/css/bootstrap.min.css";
+import { useState } from "react";
+import Footer from "./components/Footer";
 
 function App() {
-  
-
+  const [handle, setHandle] = useState("");
   return (
     <>
-      <p>Cf Lens</p>
+      <NavBar setHandle={setHandle} />
+      <Outlet context={handle} />
+      <Footer />
     </>
-  )
+  );
 }
 
-export default App
+export default App;

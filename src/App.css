@@ -1,0 +1,206 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/*CSS for navbar*/
+.app-name-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.user-primary {
+  float: right;
+}
+.app-name {
+  color: #2596be;
+}
+.nav-comp {
+  margin-right: 50px;
+}
+.nav-font {
+  font-size: 20px;
+  margin-top: 10px;
+}
+.logo-image {
+  height: 80px;
+  width: 80px;
+  object-fit: cover;
+}
+
+/*CSS for Home*/
+.Home-container {
+  width: 100%;
+  min-height: 87vh;
+  display: flex;
+  gap: 30px;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+}
+.user-image-container {
+  padding: 5px;
+  background-color: #38bdf8;
+  box-shadow: 0 0 12px rgba(56, 189, 248, 0.3);
+  border-radius: 10px;
+}
+.profile-pic {
+  height: 300px;
+  width: auto;
+  border-radius: 7px;
+}
+.user-info {
+  background-color: aliceblue;
+  padding: 10px 50px 7px 0px;
+  border-radius: 10px;
+  border: 5px solid #38bdf8;
+  box-shadow: 0 0 12px rgba(56, 189, 248, 0.3);
+  font-size: 20px;
+  color: black;
+}
+li {
+  list-style-type: none;
+}
+
+/*Charts*/
+.chart-container {
+  padding: 15px;
+  margin-top: 15px;
+  width: auto;
+  min-width: 300px;
+  height: 500px;
+  background-color: aliceblue;
+  border-radius: 10px;
+  border: 5px solid #38bdf8;
+  box-shadow: 0 0 12px rgba(56, 189, 248, 0.3);
+}
+@media (max-width: 768px) {
+  .chart-container {
+    height: 300px;
+    padding: 10px 10px 2px 2px;
+  }
+}
+
+.recharts-surface:focus-visible {
+  outline: none;
+}
+.recharts-wrapper:focus,
+.recharts-surface:focus {
+  outline: none;
+}
+.recharts-surface,
+.recharts-wrapper {
+  outline: none !important;
+}
+
+.tool-tip {
+  background: white;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+/*Stat Cards*/
+.stat-big-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+}
+.stat-container {
+  padding: 15px;
+  margin-top: 15px;
+  width: auto;
+  min-width: 250px;
+  height: 350px;
+  background-color: aliceblue;
+  border-radius: 10px;
+  border: 5px solid #38bdf8;
+  box-shadow: 0 0 12px rgba(56, 189, 248, 0.3);
+}
+.short-stat-container {
+  padding: 15px;
+  margin-top: 15px;
+  width: auto;
+  min-width: 250px;
+  height: auto;
+  background-color: aliceblue;
+  border-radius: 10px;
+  border: 5px solid #38bdf8;
+  box-shadow: 0 0 12px rgba(56, 189, 248, 0.3);
+}
+
+/*Compare*/
+.user-two-input {
+  align-self: flex-start;
+}
+.hero-stat-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  padding: 15px;
+  gap: 30px;
+}
+.hero-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: aliceblue;
+  border-radius: 10px;
+  border: 5px solid #38bdf8;
+  padding: 15px;
+  margin: 10px;
+  box-shadow: 0 0 12px rgba(56, 189, 248, 0.3);
+}
+.comparison-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  gap: 15px;
+}
+/*Miscellaneous*/
+.white-font {
+  color: aliceblue;
+}
+.green-font {
+  color: forestgreen;
+}
+.red-font {
+  color: rgb(255, 0, 0);
+}
+.blue-font {
+  color: #2c0eef;
+}
+
+/*CSS for footer*/
+.footer {
+  background-color: #2b3035;
+  width: 100vw;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: system-ui, sans-serif;
+  border-top: 2px solid rgba(240, 248, 255, 0.416);
+}
+.footer-font {
+  color: aliceblue;
+  opacity: 0.5;
+  font-size: 12px;
+  line-height: 10%;
+}
+.foot-anchor {
+  margin-right: 10px;
+  margin-left: 10px;
+  text-decoration: none;
+  color: aliceblue;
+  opacity: 1;
+}
