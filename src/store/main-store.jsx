@@ -8,6 +8,7 @@ import { createContext } from "react";
 
 export const router = createBrowserRouter([
   {
+    basename: "/cf-lens",
     path: "/",
     element: <App />,
     children: [
